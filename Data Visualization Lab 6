@@ -1,0 +1,98 @@
+Analytical KPIs and Custom DAX Calculations Using Power BI
+
+Introduction
+Data visualization helps transform raw business data into meaningful information that can support better decision-making. In this practical, Power BI and DAX (Data Analysis Expressions) were used to analyze sales data and develop an interactive business dashboard.
+The objective was to create analytical KPIs, implement custom DAX calculations, and visualize important business metrics such as sales, profit, orders, customers, product performance, and regional performance. The dashboard also provides interactive filtering through slicers for Region, Category, and Order Date. Task_6_DAX_PowerBI_Submission
+Dataset
+The analysis was performed using the Sample Superstore dataset. The dataset contains information related to orders, customers, products, categories, sales, quantity, discounts, and profit.
+Power BI was used to import and transform the dataset, while DAX was used to create calculated measures for the analysis.
+Creating KPI Measures
+The first step was to create important KPI measures using DAX. These measures provide a quick summary of the overall business performance.
+The main KPIs created were:
+- Total Sales – Calculates the total sales generated.
+- Total Profit – Calculates the total profit.
+- Total Quantity – Calculates the total number of units sold.
+- Total Orders – Counts unique orders using DISTINCTCOUNT.
+- Total Customers – Counts unique customers.
+- Average Sales – Calculates the average sales value.
+- Average Order Value – Calculates total sales divided by total orders.
+- Average Product Price – Calculates the average product price.
+- Profit Margin % – Calculates profit as a percentage of sales.
+For example, the Average Order Value was calculated using:
+Average Order Value =
+DIVIDE([Total Sales], [Total Orders])
+
+The DIVIDE() function was used because it safely handles situations where the denominator may be zero. Task_6_DAX_PowerBI_Submission
+Similarly, Profit Margin was calculated as:
+Profit Margin % =
+DIVIDE([Total Profit], [Total Sales]) * 100
+
+This measure represents the percentage of sales that is retained as profit. Task_6_DAX_PowerBI_Submission
+Custom DAX Calculations
+Several additional DAX measures were created to perform deeper analysis. Functions such as:
+- SUM()
+- AVERAGE()
+- AVERAGEX()
+- COUNT()
+- DISTINCTCOUNT()
+- CALCULATE()
+- DIVIDE()
+- FILTER()
+- RANKX()
+were used in the analysis.
+For example, RANKX() was used to rank categories and products according to their sales performance. CALCULATE() and FILTER() were used to calculate sales for specific categories and profitable transactions. Task_6_DAX_PowerBI_Submission
+Some of the additional measures included:
+- Furniture Sales
+- Office Supplies Sales
+- Technology Sales
+- High Value Sales
+- Profitable Sales
+- Sales per Customer
+- Profit per Order
+- Product Sales Rank
+- Category Sales Rank
+- Technology Sales
+These calculations allowed the dashboard to provide more detailed business insights.
+Power BI Dashboard
+An interactive dashboard was developed using the calculated measures and visualizations.
+The dashboard contains KPI cards displaying important business metrics along with visualizations for:
+- Sales trends over time
+- Sales by region
+- Sales by customer segment
+- Sales by category
+- Top-selling products
+- Sales versus profit by category
+Interactive slicers were added for Region, Category, and Order Date, allowing users to dynamically filter the dashboard and examine specific portions of the data. Task_6_DAX_PowerBI_Submission
+Results
+The KPI dashboard provides a quick overview of the business performance. The results shown in the dashboard include approximately:
+KPI	Value
+Total Sales	6.40M
+Total Cost	3.80M
+Total Profit	2.60M
+Total Orders	25K
+Total Customers	17K
+Total Quantity	84K
+Average Sales	2.44K
+Average Order Value	254.53
+Average Product Price	714.44
+Profit Margin	40.62%
+
+
+These values are displayed in the KPI section of the dashboard shown in the practical report. Task_6_DAX_PowerBI_Submission
+DAX and Business Analysis
+DAX allowed the dashboard to go beyond simple aggregation. For example, DISTINCTCOUNT() ensured that orders and customers were not counted multiple times when multiple rows belonged to the same order or customer.
+SUMX() and RELATED() were also used in calculations involving product prices and costs. Total sales were calculated by multiplying order quantity by the related product price and aggregating the result across the sales table. Similarly, total cost was calculated using product cost. Task_6_DAX_PowerBI_Submission
+This demonstrates how DAX can be used to create dynamic business calculations that respond to filters and slicers.
+Key Insights
+From the dashboard and KPI analysis, the following observations can be made:
+1. The dashboard generated approximately 6.40 million in total sales.
+2. The total profit was approximately 2.60 million.
+3. The calculated profit margin was 40.62%, indicating a significant proportion of sales was retained as profit.
+4. Approximately 25,000 orders and 17,000 customers were represented in the KPI analysis.
+5. The dashboard allows product categories, regions, customer segments, and dates to be compared interactively.
+6. Product and category ranking measures help identify the strongest-performing products and categories.
+Conclusion
+This practical demonstrated how Power BI and DAX can be combined to perform business intelligence and data analysis. The use of DAX measures made it possible to calculate important KPIs, rankings, profitability metrics, and category-specific sales.
+The interactive dashboard provides a simple way to explore business performance through charts, KPI cards, and slicers. Overall, the practical demonstrates how raw sales data can be transformed into an interactive analytical dashboard that supports data-driven decision-making.
+Technologies Used
+Power BI Desktop | DAX | DAX Studio | Superstore Dataset
