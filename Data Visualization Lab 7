@@ -1,0 +1,50 @@
+# Sales and Profit Analysis Using Power BI and R
+
+**Data Visualization Lab — Practical 7**
+
+**Student:** Eshaan Sumesh  
+**PRN:** 24070126058  
+**Class:** AIML A3
+
+## 1. Introduction
+
+This project uses the Sample Superstore dataset to analyze sales and profit using Microsoft Power BI and R. The objective is to create visualizations, perform regression analysis, and develop an interactive dashboard for business insights.
+
+## 2. Tools and Dataset
+
+- **Dataset:** Sample Superstore CSV
+- **Visualization:** Microsoft Power BI Desktop
+- **Programming language:** R
+- **Libraries:** ggplot2, dplyr, tidyr and corrplot
+
+## 3. Implementation
+
+The dataset was imported and prepared in Power BI. R was installed and configured for use with Power BI.
+
+Four R visualizations were created:
+
+1. Distribution of Sales
+2. Distribution of Profit
+3. Sales vs Profit
+4. Profit by Product Category
+
+Linear regression was used to examine the relationship between sales and profit.
+
+The Power BI dashboard includes KPI cards for Total Sales, Total Profit, Total Orders, Total Customers and Profit Margin. Native charts display monthly sales trends, sales by region, sales by category, and the top 10 products by sales. Interactive slicers, filters and drill-down features allow users to explore the data.
+
+## 4. Business Insights
+
+The dashboard helps identify high-performing regions and product categories, compare profitability, and examine products with the highest sales.
+
+- **Highest-sales region:** To be identified from the dashboard.
+- **Highest-sales category:** To be identified from the dashboard.
+- **Sales and profit relationship:** To be interpreted from the regression output.
+- **Business recommendation:** Use the dashboard findings to investigate low-profit products and regions and identify opportunities to improve profitability.
+
+## 5. Conclusion
+
+This practical demonstrates how R and Power BI can be integrated for data analysis and visualization. R supports statistical visualization and regression, while Power BI presents the results through KPI cards, charts, slicers, filters and drill-down. Together, these tools provide an interactive way to explore sales and profitability patterns.
+
+**Submitted by:** Eshaan Sumesh  
+**PRN:** 24070126058  
+**Course:** Data Visualization Lab (TE7663)
